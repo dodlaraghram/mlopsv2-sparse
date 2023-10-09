@@ -4,7 +4,7 @@ on:
   push:
   workflow_dispatch:
 env:
-  config_env: "none"
+  config_env: "Dev"
 jobs:
   set-env-branch:
     runs-on: ubuntu-latest
