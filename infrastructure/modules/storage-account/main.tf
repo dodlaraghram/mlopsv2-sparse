@@ -25,7 +25,7 @@ resource "azurerm_storage_account" "stgh" {
 # Virtual Network & Firewall configuration
 
 resource "azurerm_storage_account_network_rules" "firewall_rules" {
-  storage_account_id = azurerm_storage_account.st.id
+  storage_account_id = azurerm_storage_account.stgh.id
 
   default_action             = "Allow"
   ip_rules                   = [] # [data.http.ip.body]
