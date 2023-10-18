@@ -1,5 +1,7 @@
-resource "azurerm_resource_group" "adl_rg" {
-  name     = "rg-${var.prefix}-${var.postfix}${var.env}"
-  location = var.location
-  tags     = var.tags
+data "azurerm_resource_group" "AIML_RG" {
+  name = "AIML_RG"
+}
+
+output "id" {
+  value = data.azurerm_resource_group.AIML_RG.id
 }
