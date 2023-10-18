@@ -60,7 +60,7 @@ jobs:
       creds: ${{secrets.AZURE_CREDENTIALS}}
   run-model-training-pipeline:
     needs: [get-config, register-environment, register-dataset, create-compute]
-    uses: Azure/mlops-templates/.github/workflows/run-pipeline.yml@main
+    uses: Azure/mlops-templates/.github/workflows/run-pipeline.yml@practicemlo
     with:
       resource_group: ${{ needs.get-config.outputs.resource_group }}
       workspace_name: ${{ needs.get-config.outputs.aml_workspace }}
