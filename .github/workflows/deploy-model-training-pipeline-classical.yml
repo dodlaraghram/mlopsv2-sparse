@@ -49,7 +49,7 @@ jobs:
     needs: [get-config]
     uses: Azure/mlops-templates/.github/workflows/create-compute.yml@main
     with:
-      cluster_name: cpu-cluster
+      cluster_name: AICompOPt
       size: STANDARD_F4S_V2
       min_instances: 0
       max_instances: 1
