@@ -8,7 +8,7 @@ variables:
 
   namespace: mlop34 #Note: A namespace with many characters will cause storage account creation to fail due to storage account names having a limit of 24 characters.
   #postfix: ao04
-  location: eastus2
+  location: North Europe
   environment: dev
   enable_aml_computecluster: true
   enable_monitoring: false
@@ -21,7 +21,7 @@ variables:
 
   # For pipeline reference
   resource_group: AIML_RG
-  aml_workspace: aimlws8024801150
+  aml_workspace: aimlws8024801152
   application_insights: aimlws8024801150
   key_vault: aimlws3259020060
   container_registry: WScont
